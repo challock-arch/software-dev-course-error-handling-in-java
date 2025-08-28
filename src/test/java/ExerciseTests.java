@@ -1,3 +1,4 @@
+import org.example.CustomDivideByZeroException;
 import org.example.Main;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -21,7 +22,7 @@ public class ExerciseTests {
      * Test the getSecondLetter method.
      */
     @Test
-    public void testGetSecondLetter() {
+    public void testGetSecondLetter() throws CustomDivideByZeroException {
         var logMessages = new java.util.ArrayList<String>();
         var result = Main.getSecondLetter("Hello", logMessages);
 
